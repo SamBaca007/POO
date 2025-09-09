@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\main_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\item.h" />
+    <ClInclude Include="include\inventory.h" />
     <ClInclude Include="include\Prerequisites.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
