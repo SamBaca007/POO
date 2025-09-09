@@ -22,7 +22,8 @@ public:
 		m_quantity += quantity;
 	}
 
-	void remove(int quantity) {
+	void
+	remove(int quantity) {
 		if (quantity <= m_quantity) {
 			m_quantity -= quantity;
 		} else {

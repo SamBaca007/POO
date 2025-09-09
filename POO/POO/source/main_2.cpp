@@ -1,5 +1,6 @@
 #include "Prerequisites.h"
 #include "inventory.h"
+#include "rectangle.h"
 
 //Crear una clase Character
 class
@@ -10,7 +11,7 @@ public:
 	Character(int health) : m_health(health) {}
 
 	void
-		rebirth() {
+	rebirth() {
 		if (!isCharacterAlive && m_health <= 0) {
 			std::cout << "El personaje ha revivido en el Respawn Point" << std::endl;
 			isCharacterAlive = true;
@@ -18,12 +19,12 @@ public:
 	}
 
 	int
-		getHealth() const {
+	getHealth() const {
 		return m_health;
 	}
 
 	void
-		setHealth(int health) {
+	setHealth(int health) {
 		m_health = health;
 	}
 
@@ -55,7 +56,13 @@ main() {
 	inventory.useItem("Pocion de Vida", 2);
 	inventory.showInventory();
 
-	std::cout << "Hello World" << std::endl;
+	Rectangulo rectangle(4, 5);
+	std::cout << "Rectangulo - Ancho: " << rectangle.getAncho() << ", Alto: " << rectangle.getAlto() << std::endl;
+	std::cout << "Area: " << rectangle.area() << std::endl;
+	std::cout << "Perimetro: " << rectangle.perimetro() << std::endl;
+
+	Fecha fecha;
+	fecha.getFecha();
 	std::cin.get();
 	return 0;
 }

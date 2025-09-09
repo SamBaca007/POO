@@ -3,13 +3,13 @@
 #include"Item.h"
 
 class
-	Inventory {
+Inventory {
 public:
 	Inventory() = default;
 	~Inventory() = default;
 
 	void
-		addItem(const std::string& name, int quantity) {
+	addItem(const std::string& name, int quantity) {
 		//Se busca si existe el elemento a agregar para incrementar su cantidad
 		for (auto& item : m_items) {
 			if (item.getName() == name) {
@@ -22,7 +22,7 @@ public:
 	}
 
 	void
-		showInventory() const {
+	showInventory() const {
 		//Verificar que el inventario NO esté vacío
 		if (m_items.empty()) {
 			std::cout << "Inventario vacio" << std::endl;
@@ -37,7 +37,7 @@ public:
 	}
 
 	void
-		useItem(const std::string& name, int quantity) {
+	useItem(const std::string& name, int quantity) {
 		for (auto& item : m_items) {
 			if (item.getName() == name) {
 				item.remove(quantity);
