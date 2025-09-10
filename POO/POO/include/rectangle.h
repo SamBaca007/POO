@@ -1,30 +1,29 @@
 #pragma once
-#pragma once
 #include "Prerequisites.h"
 
 class
-	Rectangulo {
+Rectangulo {
 public:
-	Rectangulo(double ancho, double alto) : m_ancho(ancho), m_alto(alto) {}
+Rectangulo(double ancho, double alto) : m_ancho(ancho), m_alto(alto) {}
 	~Rectangulo() = default;
 
 	double
-		area() const {
+	area() const {
 		return m_ancho * m_alto;
 	}
 
 	double
-		perimetro() const {
+	perimetro() const {
 		return 2 * (m_ancho + m_alto);
 	}
 
 	double
-		getAncho() const {
+	getAncho() const {
 		return m_ancho;
 	}
 
 	double
-		getAlto() const {
+	getAlto() const {
 		return m_alto;
 	}
 

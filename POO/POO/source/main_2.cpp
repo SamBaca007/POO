@@ -1,6 +1,7 @@
 #include "Prerequisites.h"
 #include "inventory.h"
 #include "rectangle.h"
+#include "Circulo.h"
 
 //Crear una clase Character
 class
@@ -60,6 +61,11 @@ main() {
 	std::cout << "Rectangulo - Ancho: " << rectangle.getAncho() << ", Alto: " << rectangle.getAlto() << std::endl;
 	std::cout << "Area: " << rectangle.area() << std::endl;
 	std::cout << "Perimetro: " << rectangle.perimetro() << std::endl;
+
+	Circulo miCirculo(5);
+	std::cout << "Circulo - Radio: " << miCirculo.getRadio() << ", Diametro: " << miCirculo.getDiametro() << std::endl;
+	std::cout << "Area: " << miCirculo.area() << std::endl;
+	std::cout << "Perimetro: " << miCirculo.perimetro() << std::endl;
 
 	Fecha fecha;
 	fecha.getFecha();

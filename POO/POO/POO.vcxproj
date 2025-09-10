@@ -22,6 +22,7 @@
     <ClCompile Include="source\main_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Circulo.h" />
     <ClInclude Include="include\item.h" />
     <ClInclude Include="include\inventory.h" />
     <ClInclude Include="include\Prerequisites.h" />
