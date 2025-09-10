@@ -1,23 +1,29 @@
 #pragma once
 #include "Prerequisites.h"
 
-class Circulo {
+class 
+Circulo {
 public:
 	Circulo(double radio) : m_radio(radio) {}
+	~Circulo() = default;
 
-	double area() const {
+	double 
+	area() const {
 		return 3.14159 * (m_radio * m_radio);
 	}
 
-	double perimetro() const {
+	double 
+	perimetro() const {
 		return 3.14159 * (2 * m_radio);
 	}
 
-	double getRadio() const {
+	double 
+	getRadio() const {
 		return m_radio;
 	}
 
-	double getDiametro() const {
+	double 
+	getDiametro() const {
 		return 2 * m_radio;
 	}
 

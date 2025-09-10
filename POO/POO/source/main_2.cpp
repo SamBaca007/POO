@@ -2,6 +2,7 @@
 #include "inventory.h"
 #include "rectangle.h"
 #include "Circulo.h"
+#include "Estudiante.h"
 
 //Crear una clase Character
 class
@@ -69,6 +70,19 @@ main() {
 
 	Fecha fecha;
 	fecha.getFecha();
+
+	Estudiante estudiantes[5];
+
+	estudiantes[0].setEstudiante("Samuel Baca", 19);
+	estudiantes[1].setEstudiante("Jesus Cruz", 18);
+	estudiantes[2].setEstudiante("Cristian Cardenas", 20);
+	estudiantes[3].setEstudiante("Carlos Sanchez", 20);
+	estudiantes[4].setEstudiante("Cristhian Morales", 26);
+
+	for (int i = 0; i < 5; i++) {
+		estudiantes[i].informacion();
+	}
+
 	std::cin.get();
 	return 0;
 }
