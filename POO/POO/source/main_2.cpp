@@ -3,6 +3,8 @@
 #include "rectangle.h"
 #include "Circulo.h"
 #include "Estudiante.h"
+#include "Banco.h"
+#include "UsuarioBancario.h"
 
 //Crear una clase Character
 class
@@ -82,6 +84,23 @@ main() {
 	for (int i = 0; i < 5; i++) {
 		estudiantes[i].informacion();
 	}
+
+	Banco Santander;
+	UsuarioBancario Alice = Santander.nuevoUsuario(CuentaBancaria("Alice", 1001, 5000.0));
+	UsuarioBancario Samuel = Santander.nuevoUsuario(CuentaBancaria("Samuel", 1007, 3000.0));
+
+	//Banco BBVA("Samuel", 1007, 5000.0);
+
+	std::cout << "Antes de la transferencia: " << std::endl;
+	//Santander.consultarSaldo();
+	//BBVA.consultarSaldo();
+
+	std::cout << "Realizando la transferencia..." << std::endl;
+	Santander.realizarTransferencia(Samuel, Alice, 1500.0, 1809);
+
+	std::cout << "Despues de la transferencia: " << std::endl;
+	//Santander.consultarSaldo();
+	//BBVA.consultarSaldo();
 
 	std::cin.get();
 	return 0;
