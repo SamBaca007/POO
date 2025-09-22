@@ -30,3 +30,12 @@ Fecha {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
 	}
 };
+
+// Enumera los diferentes tipos de industrias o giros comerciales para la clase Banco.
+enum
+	TRADE {
+	TELECOMUNICAIONES = 1,
+	RESTAURANTES = 2,
+	FARMACIAS = 3,
+	SUPERMERCADOS = 4
+};

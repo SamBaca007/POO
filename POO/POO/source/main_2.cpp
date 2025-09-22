@@ -5,6 +5,7 @@
 #include "Estudiante.h"
 #include "Banco.h"
 #include "UsuarioBancario.h"
+#include "Producto.h"
 
 //Crear una clase Character
 class
@@ -101,6 +102,34 @@ main() {
 	std::cout << "Despues de la transferencia: " << std::endl;
 	//Santander.consultarSaldo();
 	//BBVA.consultarSaldo();
+
+	// Producto 1
+	Producto 
+	jabon("Jabon", "B321", Categoria::LIMPIEZA, "Jabon en barra",
+		TipoConsumo::NO_CONSUMIBLE, "20/09/2025", "20/09/2028",
+		0.250, 15.00, "1 pieza", "Palmolive", "Clasico");
+
+	// Producto 2
+	Producto 
+	leche("Leche entera", "A123", Categoria::ALIMENTO, "Leche de vaca pasteurizada",
+		TipoConsumo::CONSUMIBLE, "21/09/2025", "21/10/2025",
+		1.0, 25.50, "1 Litro", "Lala", "Clasica");
+
+	// Mostrar prodcuto (nombre y precio)
+	std::cout << "Producto 1: " << jabon.getNombre() << " - $" << jabon.getCosto() << std::endl;
+	std::cout << "Producto 2: " << leche.getNombre() << " - $" << leche.getCosto() << std::endl;
+
+	// Modificación de valores
+	jabon.setCosto(17.00);  // Cambio de precio al jabón
+	std::cout << "Nuevo precio del " << jabon.getNombre() << ": $" << jabon.getCosto() << std::endl;
+
+	// Ejemplo de enum con condición
+	if (leche.getTipoConsumo() == TipoConsumo::CONSUMIBLE) {
+		std::cout << leche.getNombre() << " es consumible." << std::endl;
+	}
+	else {
+		std::cout << leche.getNombre() << " no es consumible." << std::endl;
+	}
 
 	std::cin.get();
 	return 0;

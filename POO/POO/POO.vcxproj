@@ -29,6 +29,7 @@
     <ClInclude Include="include\item.h" />
     <ClInclude Include="include\inventory.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\Producto.h" />
     <ClInclude Include="include\rectangle.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
   </ItemGroup>
