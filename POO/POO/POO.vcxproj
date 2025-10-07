@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\main_2.cpp" />
+    <ClCompile Include="source\main_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Banco.h" />
@@ -30,6 +30,8 @@
     <ClInclude Include="include\inventory.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingPatterns\RegistroActividad.h" />
     <ClInclude Include="include\rectangle.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
   </ItemGroup>
