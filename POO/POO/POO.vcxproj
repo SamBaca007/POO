@@ -30,8 +30,10 @@
     <ClInclude Include="include\inventory.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistroActividad.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Vehiculo.h" />
     <ClInclude Include="include\rectangle.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
   </ItemGroup>
