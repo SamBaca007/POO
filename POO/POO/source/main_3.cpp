@@ -3,6 +3,11 @@
 #include "ProgrammingPatterns/RegistroActividad.h"
 #include "ProgrammingPatterns/FactoryMethod.h"
 #include "ProgrammingPatterns/Vehiculo.h"
+#include "ProgrammingPatterns/AbstractFactory/Mueble.h"
+#include "ProgrammingPatterns/AbstractFactory/FactoriaMuebles.h"
+#include "ProgrammingPatterns/Builder/Builder.h"
+#include "ProgrammingPatterns/Builder/BuilderConcreto.h"
+#include "ProgrammingPatterns/Builder/Director.h"
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -28,7 +33,7 @@ void cliente(FactoriaVehiculos* factoria) {
 
 int 
 main() {
-  // Usamos la estructura de mi singleton
+  /* Usamos la estructura de mi singleton
   MiSingleton* singleton = MiSingleton::getInstance();
   singleton->setData(42);
 
@@ -51,7 +56,7 @@ main() {
   producto->operacion();
 
   delete producto;
-  delete fabrica;
+  delete fabrica; */
 
   FactoriaVehiculos* factoriaCoche = new FactoriaCoches();
   cliente(factoriaCoche);
@@ -61,7 +66,33 @@ main() {
   cliente(factoriaBici);
   delete factoriaBici;
 
+  FactoriaMuebles* miFabrica = new FactoriaMueblesRusticos();
+  Silla* silla = miFabrica->crearSilla();
+  Mesa* mesa = miFabrica->crearMesa();
 
+  std::cout << "=== Muebles creados ===" << std::endl;
+  silla->descripcion();
+  silla->color();
+  std::cout << std::endl;
+  mesa->descripcion();
+  mesa->color();
+
+  delete silla;
+  delete mesa;
+  delete miFabrica;
+
+  Builder* builder = new BuilderConcreto();
+  Director* director = new Director(builder);
+
+  director->construct();
+  //director->show();
+
+  Producto* producto = builder->getProducto();
+  producto->show();
+
+  delete producto;
+  delete director;
+  delete builder;
 
   return 0;
 }

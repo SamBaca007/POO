@@ -22,6 +22,9 @@
     <Filter Include="Archivos de origen\ProgrammingPatterns">
       <UniqueIdentifier>{745c699e-6195-4c85-a36e-4e0bb0b5750a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{90dc0834-9ec7-48d8-afcd-d69a89d51b46}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp">
@@ -31,6 +34,15 @@
       <Filter>Archivos de origen\ProgrammingPatterns</Filter>
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\ProductoB1.cpp">
+      <Filter>Archivos de origen\ProgrammingPatterns</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Mueble.cpp">
+      <Filter>Archivos de origen\ProgrammingPatterns</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\FactoriaMuebles.cpp">
+      <Filter>Archivos de origen\ProgrammingPatterns</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\BuilderConcreto.cpp">
       <Filter>Archivos de origen\ProgrammingPatterns</Filter>
     </ClCompile>
   </ItemGroup>
@@ -94,6 +106,24 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mueble.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMuebles.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

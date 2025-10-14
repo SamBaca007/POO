@@ -20,6 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\BuilderConcreto.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\FactoriaMuebles.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\Mueble.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\ProductoA1.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\ProductoB1.cpp" />
   </ItemGroup>
@@ -34,10 +37,16 @@
     <ClInclude Include="include\Producto.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMuebles.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mueble.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA1.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistroActividad.h" />
