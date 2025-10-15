@@ -45,10 +45,15 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB1.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaHawaiiana.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\ConstructorPizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistroActividad.h" />
     <ClInclude Include="include\ProgrammingPatterns\Vehiculo.h" />
     <ClInclude Include="include\rectangle.h" />

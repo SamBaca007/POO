@@ -5,9 +5,11 @@
 #include "ProgrammingPatterns/Vehiculo.h"
 #include "ProgrammingPatterns/AbstractFactory/Mueble.h"
 #include "ProgrammingPatterns/AbstractFactory/FactoriaMuebles.h"
-#include "ProgrammingPatterns/Builder/Builder.h"
-#include "ProgrammingPatterns/Builder/BuilderConcreto.h"
-#include "ProgrammingPatterns/Builder/Director.h"
+#include "ProgrammingPatterns/Builder/ConstructorPizza.h"
+#include "ProgrammingPatterns/Builder/BuilderPizzaHawaiiana.h"
+#include "ProgrammingPatterns/Builder/Pizza.h"
+#include "ProgrammingPatterns/Prototype/Prototype.h"
+#include "ProgrammingPatterns/Prototype/PrototypeConcreto.h"
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -56,7 +58,7 @@ main() {
   producto->operacion();
 
   delete producto;
-  delete fabrica; */
+  delete fabrica; 
 
   FactoriaVehiculos* factoriaCoche = new FactoriaCoches();
   cliente(factoriaCoche);
@@ -92,7 +94,28 @@ main() {
 
   delete producto;
   delete director;
-  delete builder;
+  delete builder; */
+
+  ConstructorPizza* constructorHawaiiana = new builderPizzaHawaiiana();
+  constructorHawaiiana->addIngrediente(INGREDIENTES::ACEITUNAS);
+  constructorHawaiiana->buildIngredientes();
+
+  Pizza* pizzaHawaiiana = constructorHawaiiana->getPizza();
+  pizzaHawaiiana->show();
+
+  delete constructorHawaiiana;
+  delete pizzaHawaiiana;
+
+  Prototype* original = new PrototypeConcreto();
+  original->config("Original");
+
+  Prototype* clone = original->clone();
+  clone->config("Clone");
+  original->info();
+  clone->info();
+
+  delete original;
+  delete clone;
 
   return 0;
 }

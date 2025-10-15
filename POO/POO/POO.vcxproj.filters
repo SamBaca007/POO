@@ -25,6 +25,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Builder">
       <UniqueIdentifier>{90dc0834-9ec7-48d8-afcd-d69a89d51b46}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Prototype">
+      <UniqueIdentifier>{342e0b2f-9a08-469a-b510-9890eedab7c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp">
@@ -124,6 +127,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Pizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\ConstructorPizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaHawaiiana.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

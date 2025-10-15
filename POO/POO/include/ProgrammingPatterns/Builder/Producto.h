@@ -1,7 +1,8 @@
 #pragma once
 #include "Prerequisites.h"
 
-class Producto {
+class 
+Producto {
 public:
   Producto() = default;
   ~Producto() = default;
