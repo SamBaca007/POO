@@ -10,6 +10,13 @@
 #include "ProgrammingPatterns/Builder/Pizza.h"
 #include "ProgrammingPatterns/Prototype/Prototype.h"
 #include "ProgrammingPatterns/Prototype/PrototypeConcreto.h"
+#include "ProgrammingPatterns/Adapter/InterfazVieja.h"
+#include "ProgrammingPatterns/Adapter/InterfazNueva.h"
+#include "ProgrammingPatterns/Adapter/Adaptador.h"
+#include "ProgrammingPatterns/Adapter/Circulo.h"
+#include "ProgrammingPatterns/Adapter/Cuadrado.h"
+#include "ProgrammingPatterns/Adapter/AdaptadorCirculo.h"
+#include "ProgrammingPatterns/Adapter/AdaptadorCuadrado.h"
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -96,7 +103,7 @@ main() {
   delete director;
   delete builder; */
 
-  ConstructorPizza* constructorHawaiiana = new builderPizzaHawaiiana();
+  /*ConstructorPizza* constructorHawaiiana = new builderPizzaHawaiiana();
   constructorHawaiiana->addIngrediente(INGREDIENTES::ACEITUNAS);
   constructorHawaiiana->buildIngredientes();
 
@@ -115,7 +122,29 @@ main() {
   clone->info();
 
   delete original;
-  delete clone;
+  delete clone;*/
+
+  InterfazVieja* objetoViejo = new InterfazVieja();
+  InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
+
+  objetoNuevo->metodoNuevo();
+
+  delete objetoViejo;
+  delete objetoNuevo;
+
+  Circulo* circulo = new Circulo();
+  Cuadrado* cuadrado = new Cuadrado();
+
+  Dibujable* adaptarCirculo = new AdaptadorCirculo(circulo);
+  Dibujable* adaptarCuadrado = new AdaptadorCuadrado(cuadrado);
+
+  adaptarCirculo->dibujar();
+  adaptarCuadrado->dibujar();
+
+  delete circulo;
+  delete cuadrado;
+  delete adaptarCirculo;
+  delete adaptarCuadrado;
 
   return 0;
 }

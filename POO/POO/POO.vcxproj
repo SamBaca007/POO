@@ -43,6 +43,14 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA1.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Adaptador.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\AdaptadorCirculo.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\AdaptadorCuadrado.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Circulo.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Cuadrado.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Dibujable.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazNueva.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazVieja.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaHawaiiana.h" />

@@ -28,6 +28,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Prototype">
       <UniqueIdentifier>{342e0b2f-9a08-469a-b510-9890eedab7c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Adapter">
+      <UniqueIdentifier>{a0150a0d-918e-47c5-8b0d-4ef8da4eee10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp">
@@ -142,6 +145,30 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazVieja.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazNueva.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Adaptador.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Circulo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Cuadrado.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\AdaptadorCirculo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Dibujable.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\AdaptadorCuadrado.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
