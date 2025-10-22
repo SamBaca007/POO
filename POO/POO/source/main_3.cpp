@@ -17,6 +17,10 @@
 #include "ProgrammingPatterns/Adapter/Cuadrado.h"
 #include "ProgrammingPatterns/Adapter/AdaptadorCirculo.h"
 #include "ProgrammingPatterns/Adapter/AdaptadorCuadrado.h"
+#include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoA.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoB.h"
+
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -122,7 +126,7 @@ main() {
   clone->info();
 
   delete original;
-  delete clone;*/
+  delete clone;
 
   InterfazVieja* objetoViejo = new InterfazVieja();
   InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
@@ -144,7 +148,19 @@ main() {
   delete circulo;
   delete cuadrado;
   delete adaptarCirculo;
-  delete adaptarCuadrado;
+  delete adaptarCuadrado;*/
+
+ComponenteConcreto* objeto = new ComponenteConcreto();
+DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
+DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA);
+
+objeto->operacion();
+decoradorA->operacion();
+decoradorB->operacion();
+
+delete objeto;
+delete decoradorA;
+delete decoradorB;
 
   return 0;
 }
