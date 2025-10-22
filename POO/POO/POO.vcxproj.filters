@@ -188,5 +188,20 @@
     <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoB.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafe.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafeteria.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Condimento.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Leche.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Azucar.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

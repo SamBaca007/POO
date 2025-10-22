@@ -1,6 +1,7 @@
 #pragma once
 
-class Componente {
+class 
+Componente {
 public:
   Componente() = default;
   ~Componente() = default;

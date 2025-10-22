@@ -20,7 +20,9 @@
 #include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
 #include "ProgrammingPatterns/Decorator/DecoratorConcretoA.h"
 #include "ProgrammingPatterns/Decorator/DecoratorConcretoB.h"
-
+#include "ProgrammingPatterns/Decorator/Cafeteria.h"
+#include "ProgrammingPatterns/Decorator/Leche.h"
+#include "ProgrammingPatterns/Decorator/Azucar.h"
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -148,7 +150,7 @@ main() {
   delete circulo;
   delete cuadrado;
   delete adaptarCirculo;
-  delete adaptarCuadrado;*/
+  delete adaptarCuadrado;
 
 ComponenteConcreto* objeto = new ComponenteConcreto();
 DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
@@ -160,7 +162,24 @@ decoradorB->operacion();
 
 delete objeto;
 delete decoradorA;
-delete decoradorB;
+delete decoradorB;*/
+
+Cafeteria* cafeteria = new Cafeteria();
+Leche* cafeConLeche = new Leche(cafeteria);
+Azucar* cafeConAzucar = new Azucar(cafeConLeche);
+
+std::cout << "--- Preparacion 1: Solo Base ---" << std::endl;
+cafeteria->servir();
+
+std::cout << "\n--- Preparacion 2: Con Leche ---" << std::endl;
+cafeConLeche->decorar();
+
+std::cout << "\n--- Preparacion 3: Con Leche y Azucar ---" << std::endl;
+cafeConAzucar->decorar();
+
+delete cafeConAzucar;
+delete cafeConLeche;
+delete cafeteria;
 
   return 0;
 }
