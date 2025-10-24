@@ -23,6 +23,10 @@
 #include "ProgrammingPatterns/Decorator/Cafeteria.h"
 #include "ProgrammingPatterns/Decorator/Leche.h"
 #include "ProgrammingPatterns/Decorator/Azucar.h"
+#include "ProgrammingPatterns/Composite/Hoja.h"
+#include "ProgrammingPatterns/Composite/Composite.h"
+#include "ProgrammingPatterns/Composite/SistemaArchivo.h"
+#include "ProgrammingPatterns/Composite/Carpeta.h"
 
 // Inicializamos la instancia estatica
 MiSingleton* MiSingleton::instance = nullptr;
@@ -162,7 +166,7 @@ decoradorB->operacion();
 
 delete objeto;
 delete decoradorA;
-delete decoradorB;*/
+delete decoradorB;
 
 Cafeteria* cafeteria = new Cafeteria();
 Leche* cafeConLeche = new Leche(cafeteria);
@@ -179,7 +183,59 @@ cafeConAzucar->decorar();
 
 delete cafeConAzucar;
 delete cafeConLeche;
-delete cafeteria;
+delete cafeteria;*/
+
+Hoja* hoja1 = new Hoja();
+Hoja* hoja2 = new Hoja();
+Composite* composite = new Composite();
+
+composite->add(hoja1);
+composite->add(hoja2);
+composite->operacion();
+
+delete hoja1;
+delete hoja2;
+delete composite;
+
+// 1. Crear instancias de SistemaArchivo (los "archivos individuales" o Hojas)
+    // Se usan punteros al tipo base 'Sistema' para poder añadirlos a la carpeta
+    // y usar polimorfismo, aunque se inicializan como SistemaArchivo.
+Sistema* archivo1 = new SistemaArchivo();
+Sistema* archivo2 = new SistemaArchivo();
+Sistema* archivo3 = new SistemaArchivo();
+
+// 2. Crear instancias de SistemaCarpeta (el "contenedor" o Composite)
+SistemaCarpeta* carpetaPrincipal = new SistemaCarpeta();
+SistemaCarpeta* subCarpeta = new SistemaCarpeta();
+
+// 3. Organizar la estructura (Patrón Composite)
+// Agregamos archivos a la subcarpeta
+std::cout << "--- Agregando elementos a la SubCarpeta ---" << std::endl;
+subCarpeta->agregarSistema(archivo3);
+
+// Agregamos archivos y la subcarpeta a la carpeta principal
+std::cout << "--- Agregando elementos a la Carpeta Principal ---" << std::endl;
+carpetaPrincipal->agregarSistema(archivo1);
+carpetaPrincipal->agregarSistema(subCarpeta); // ¡Una carpeta dentro de otra!
+carpetaPrincipal->agregarSistema(archivo2);
+
+// 4. Mostrar la información de todo el sistema (Punto 6)
+// Al llamar a mostrarInfo() en el componente raíz (la carpeta), 
+// la llamada se propaga a todos los hijos (Patrón Composite).
+std::cout << "\n==========================================" << std::endl;
+std::cout << "MOSTRANDO LA INFORMACION DE TODO EL SISTEMA" << std::endl;
+std::cout << "==========================================" << std::endl;
+
+carpetaPrincipal->mostrarInfo();
+
+// 5. Limpieza de memoria (IMPORTANTE: liberar solo el elemento raíz)
+// El destructor virtual de SistemaCarpeta se encarga de liberar 
+// recursivamente a todos sus hijos (archivo1, subCarpeta, archivo2, etc.).
+std::cout << "\n--- Limpieza de memoria ---" << std::endl;
+delete carpetaPrincipal;
+
+// Los destructores de SistemaCarpeta (si están bien implementados) 
+// se encargan de borrar subCarpeta, archivo1, archivo2 y archivo3.
 
   return 0;
 }

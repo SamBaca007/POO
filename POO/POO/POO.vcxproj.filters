@@ -34,6 +34,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Decorator">
       <UniqueIdentifier>{2317364a-3e85-49a7-b137-6d07b76c475a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{b85b0e94-d371-4be8-aee1-fdf011fbabe1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp">
@@ -202,6 +205,24 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Decorator\Azucar.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Hoja.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Archivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Carpeta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Sistema.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaArchivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
