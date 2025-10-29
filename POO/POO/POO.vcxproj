@@ -76,8 +76,14 @@
     <ClInclude Include="include\ProgrammingPatterns\Decorator\Leche.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Observer\DisplayDevice.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Observer\Observer.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Observer\TemperatureSensor.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Proxy.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Sujeto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\SujetoReal.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistroActividad.h" />
     <ClInclude Include="include\ProgrammingPatterns\Vehiculo.h" />
     <ClInclude Include="include\rectangle.h" />

@@ -37,6 +37,12 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
       <UniqueIdentifier>{b85b0e94-d371-4be8-aee1-fdf011fbabe1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Proxy">
+      <UniqueIdentifier>{7262c25c-effb-4c28-baaf-833ced272b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Observer">
+      <UniqueIdentifier>{28fde424-8d34-4fca-be9a-8368ed6b0f07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_3.cpp">
@@ -223,6 +229,24 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaArchivo.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Sujeto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\SujetoReal.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Proxy.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Observer\Observer.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Observer\TemperatureSensor.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Observer\DisplayDevice.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
